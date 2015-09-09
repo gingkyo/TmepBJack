@@ -1,11 +1,11 @@
-<html>
-    
     <?php $num = 1;
+    
     foreach ($view->playerCards as $card){
         $val = $card->getDetails();
         echo "Your Card # $num is $val<br>";
         $num++;
     }?>
+    <div id="testing" class="col-md-6"></div>
     <h3>Your score is 
         <?php echo $view->playerScore; 
         if ($view->playerScore > 21){echo " - Bust!";}?>
@@ -21,5 +21,3 @@
         <?php echo $view->dealerScore; 
         if ($view->dealerScore > 21){echo " - Bust!";}?>
     </h3>
-    
-</html>

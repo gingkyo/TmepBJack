@@ -1,11 +1,12 @@
 <?php
 
 require_once 'autoload.php';
+require_once 'views/header.phtml';
 
 session_start();
 if (!isset($_SESSION['view'])){
     if (!isset($_POST['email'])){
-        require_once './views/header.phtml';
+       
         exit('<b>Please enter your email address next time.<b>'); 
         session_destroy();
     }    

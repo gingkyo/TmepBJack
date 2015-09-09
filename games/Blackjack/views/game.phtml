@@ -1,15 +1,19 @@
-<?php require('header.phtml'); ?>
-
- <main>
-     <h1>Blackjack Game</h1>
- </main>
-<?php
-    require_once './views/display.phtml';
-    
-    if (!$view->stick){
-       require_once './views/action.phtml';            
-    }
-    else{
-        require_once './views/result.phtml';
-    }
-    require('footer.phtml');
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-md-4 col-md-offset-3 col-xs-8 col-xs-offset-2">
+			<main>
+    			<h1>Blackjack Game</h1>
+   			</main>
+			<?php
+    		require_once './views/display.phtml';?>
+		</div>
+		<div class="col-md-4 col-xs-12">
+		<?php
+    	if (!$view->stick){
+    	   require_once './views/action.phtml';            
+    	}else{
+    		require_once './views/result.phtml';
+    	}?>
+    	</div>
+    </div>
+    <?php require('footer.phtml');
+?>

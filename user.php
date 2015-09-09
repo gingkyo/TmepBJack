@@ -10,6 +10,8 @@ $return = array(
 
 // Called by client to log in to server.
 
+require_once 'views/header.phtml';
+require_once 'views/index.phtml';
 require_once 'models/Generic_functions.php';
 require_once 'models/Database.php';
 require_once 'models/Players_table.php';
